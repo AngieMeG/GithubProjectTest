@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class Triangle{
     
-    public static int VERTICES=3;
+    public static int VERTICES=4;
     
     private int height;
     private int width;
@@ -21,14 +21,19 @@ public class Triangle{
     /**
      * Create a new triangle at default position with default color.
      */
-    public Triangle(){
-        height = 30;
+    public Triangle(int height){
+        this.height = height = 30;
         width = 40;
         xPosition = 140;
         yPosition = 15;
         color = "green";
         isVisible = false;
     }
+    
+    public Triangle(boolean isVisible){
+        this.isVisible = isVisible;
+    }
+    
 
     /**
      * Make this triangle visible. If it was already visible, do nothing.
