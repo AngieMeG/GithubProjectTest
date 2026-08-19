@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class Triangle{
     
-    public static int VERTICES=3;
+    public static int VERTICES=5;
     
     private int height;
     private int width;
@@ -21,13 +21,17 @@ public class Triangle{
     /**
      * Create a new triangle at default position with default color.
      */
-    public Triangle(){
+    public Triangle(int width){
         height = 30;
-        width = 40;
+        this.width = 40;
         xPosition = 140;
         yPosition = 15;
         color = "green";
         isVisible = false;
+    }
+    
+    public Triangle(String color){
+        this.color = color;
     }
 
     /**
